@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Bou';
+    src: url('../fonts/Boulderstone.otf');
+}
+@font-face {
+    font-family: 'Red';
+    src: url('../fonts/RedHatDisplayRegular.ttf');
+}
+@font-face {
+    font-family: 'Apostrophic';
+    src: url('../fonts/APOSTROPHIC.ttf');
+}
+
+:root {
+    --mainFont: 'Red', Arial, Helvetica, sans-serif;
+    --titleFont: 'Bou','Times New Roman', Times, serif ;
+    --specialFont: 'Apostrophic','Times New Roman', Times, serif ;
+
+    --cor01: #0c151d;
+    --cor02: #0f4c75;
+    --cor03: #3282B8;
+    --cor04: #BBE1FA;
+    --cor05: #F8F8FF;
+    --cor06: #19242e;
+    
+}
+
+a {
+    color: var(--cor05);
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+} 
+
+body, html {
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: var(--cor01);
+    color: var(--cor05);
+    font-family: var(--mainFont);
+    font-size: 1rem;
+    padding: 0px 50px;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #0c151d83;
+    backdrop-filter: blur(30px);
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-item {
+    border: 1px solid var(--cor05);
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    transition: 0.3s ease-out;
+}
+
+.menu-item:hover {
+    background-color: #233446ce;
+}
+
+#logo {
+    /* position: absolute;
+    left: 50%;
+    top: 0; */
+    transform: translateX(-50%);
+    font-family: var(--specialFont);
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
