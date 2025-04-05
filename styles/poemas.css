@@ -59,6 +59,12 @@
 #song-item {
     opacity: 60%;
     width: 100%;
+    margin-bottom: 0px;
+}
+
+#song_description {
+    color: var(--cor04);
+    font-style: italic;
     margin-bottom: 20px;
 }
 
